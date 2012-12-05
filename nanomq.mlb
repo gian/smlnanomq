@@ -1,0 +1,8 @@
+ann
+   "allowFFI true"
+in
+	$(SML_LIB)/basis/basis.mlb
+	$(SML_LIB)/basis/mlton.mlb
+	nanomq.sml
+end
+

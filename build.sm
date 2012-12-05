@@ -1,0 +1,37 @@
+target mlton
+    
+    sources
+        nanomq.mlb
+    end
+
+    ffi
+        smlnmq.o
+        lnkopt -lstdc++
+    end
+
+    pre hooks
+        gcc -Inanomq/include -c smlnmq.cpp -o smlnmq.o
+    end
+
+    option compiler = mlton
+
+    target recvtest
+        
+        sources
+            nanomq.mlb
+            recvtest.sml
+        end
+
+        option output = recvtest
+    end
+
+    target sendtest
+        sources
+            nanomq.mlb
+            sendtest.sml
+        end
+
+        option output = sendtest
+    end
+end
+

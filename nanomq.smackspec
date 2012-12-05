@@ -1,0 +1,7 @@
+provides: nanomq 1.0.1
+remote: git git://github.com/gian/smlnanomq.git
+description: MLton FFI bindings for NanoMQ
+keywords: messaging, IPC
+bug-url: https://github.com/gian/smlnanomq/issues
+maintainer: Gian Perrone <gdpe@itu.dk>
+license: GPLv3

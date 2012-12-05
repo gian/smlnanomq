@@ -1,7 +1,7 @@
 
-all: sendtest recvtest
+all: nanomq/include/nmq.hpp sendtest recvtest
 
-sendtest:
+sendtest: 
 	smbt sendtest
 
 recvtest:
@@ -9,6 +9,9 @@ recvtest:
 
 clean:
 	rm -f sendtest recvtest
+
+nanomq/include/nmq.hpp:
+	git clone git://github.com/rigtorp/nanomq.git nanomq
 
 .PHONY: sendtest recvtest clean
 

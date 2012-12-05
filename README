@@ -6,3 +6,4 @@ The 'sendtest' and 'recvtest' programs attempt to communicate through a context 
 
 Because this depends on NanoMQ (which is GPL licensed), the bindings are also GPL.  Sorry 'bout that.
 
+The Makefile in the root will attempt to fetch a copy of NanoMQ from GitHub.  The library is dependent on having a copy of the NanoMQ sources in a directory called 'nanomq'.  Git submodules might do the right thing too if you know how those work.

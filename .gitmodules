@@ -1,0 +1,3 @@
+[submodule "nanomq"]
+	path = nanomq
+	url = git://github.com/rigtorp/nanomq.git

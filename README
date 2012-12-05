@@ -1,0 +1,8 @@
+This is a simple MLton FFI binding to the NanoMQ library (https://github.com/rigtorp/nanomq).
+
+The file 'build.sm' is a build file for Smbt (https://github.com/finrod/smbt).  Smbt is by far the easiest way to build this, but you can look inside the build file to get a sense of how you might build it manually instead, too.
+
+The 'sendtest' and 'recvtest' programs attempt to communicate through a context at /tmp/nmq3 --- exceptions will be thrown if this file already exists.
+
+Because this depends on NanoMQ (which is GPL licensed), the bindings are also GPL.  Sorry 'bout that.
+
